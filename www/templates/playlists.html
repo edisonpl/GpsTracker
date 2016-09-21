@@ -1,0 +1,21 @@
+<ion-view view-title="Gps Tracker">
+    <ion-content padding="true" class="has-header">
+    <img src="img/logo.png">
+    <div class="margin10"></div>
+        <form>
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">N° Gps Track:</span>
+                    <input type="number" placeholder="+569XXXXXXXX" ng-model="data.numero">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Contraseña:</span>
+                    <input type="password" placeholder="por defecto: 123456" ng-model="data.password">
+                </label>
+            </ion-list>
+            <div class="margin30"></div>
+            <button class="button button-calm button-block" ng-click="ingreso(data.numero,data.password)">Ingresar</button>
+            
+        </form>
+    </ion-content>
+</ion-view>
